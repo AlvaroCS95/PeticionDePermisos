@@ -10,6 +10,7 @@ public class Inicio {
      JOptionPane.showMessageDialog(null, "Resiiii");
      JOptionPane.showMessageDialog(null, "Resiiiixdxd");
      // prueba commit.
+     //qwertyuio
      
 	}
 
