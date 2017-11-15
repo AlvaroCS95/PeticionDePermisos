@@ -7,6 +7,8 @@ public class Inicio {
      JOptionPane.showMessageDialog(null, "Hola mundo");
      
      JOptionPane.showConfirmDialog(null, "hola");
+     JOptionPane.showMessageDialog(null, "Resiiii");
+     
 	}
 
 }
