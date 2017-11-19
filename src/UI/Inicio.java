@@ -8,10 +8,19 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
+
+import AccesoADatos.GestorDeConeccion;
+import LogicaDeNegocio.CoordinadorDeUsuarios;
+import Modelos.Usuarios;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.sql.SQLException;
 
 public class Inicio extends JFrame {
 
@@ -56,11 +65,24 @@ public class Inicio extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"Nombre del estudiante", "Hora de ingreso", "Hora de salida"
+				"Nombre del estudiante","Carne", "Hora de ingreso", "Hora de salida",
 			}
 		));
 		
 		button = new JButton("");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			/*	try {
+				CoordinadorDeUsuarios elCoordinador= new CoordinadorDeUsuarios("root", "12345");
+				Usuarios elUsuario= new Usuarios("B42747","Laura" , "Garcia","Jimenez","12345");
+				elCoordinador.IngresarUsuarios(elUsuario);
+					
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}*/
+			}
+		});
 		button.setIcon(new ImageIcon(Inicio.class.getResource("/Imagenes/Editar.png")));
 		button.setBounds(194, 22, 56, 46);
 		contentPane.add(button);
